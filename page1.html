@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <h1>This is page 1</h1>
+    <input id="userinput" type="text">
+    <button onclick="madlib()">Save madlib</button>
+    
+    <script>
+      function madlib() {
+        var x = document.getElementById('userinput').value;
+        localStorage.setItem('room1',x);
+        location.href='page2.html';
+        
+        
+      }
+      
+    </script>
+  </body>
+</html>
