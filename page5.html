@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <input id="userinput" type="text">
+    <button onclick="get()">Enter</button>
+    
+    <script>
+      var newVar =[
+        ];
+      
+      function get() {
+        var x = document.getElementById('userinput').value;
+        newVar.push(x);
+        localStorage.setItem("userinput",newVar);
+        location.href ="page5-1.html";
+        
+      }
+      
+    </script>
+  </body>
+</html>
